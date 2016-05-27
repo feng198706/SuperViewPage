@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#363636"
+    >
+
+    <org.kgmeng.widget.SuperViewPager
+        android:id="@+id/myViewPager1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/handle"
+        >
+        
+    </org.kgmeng.widget.SuperViewPager>
+
+    <LinearLayout
+        android:id="@+id/handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/preBtnUp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="(Up)" />
+
+        <Button
+            android:id="@+id/nextBtnDown"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="(Down)" />
+        <Button
+            android:id="@+id/preBtnLeft"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="(Left)" />
+        <Button
+            android:id="@+id/nextBtnRight"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="(Right)" />
+    </LinearLayout>
+
+</RelativeLayout>
